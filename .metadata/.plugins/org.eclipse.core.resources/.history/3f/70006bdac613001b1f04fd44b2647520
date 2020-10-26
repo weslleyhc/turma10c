@@ -1,0 +1,26 @@
+package br.com.concessionaria.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.concessionaria.modelo.Formula1;
+
+public class TesteFormula1 {
+
+	public static void main(String[] args) {
+		// Criar um objeto
+		Formula1 objeto = null;
+		//Instanciar um objeto
+		Formula1 carro = new Formula1();
+		carro.preencherEscuderia(JOptionPane.showInputDialog("Digite a Escuderia"));
+		carro.preencherCor("Vermelho");
+		carro.preencherValor(1000);
+		carro.ligar();
+		carro.desligar();
+		System.out.println(carro.retornarEscuderia());
+		System.out.println(carro.retornoCor());
+		System.out.println(carro.retornaValor());
+		System.out.println(carro.ligar());
+		System.out.println(carro.desligar());
+	}
+
+}

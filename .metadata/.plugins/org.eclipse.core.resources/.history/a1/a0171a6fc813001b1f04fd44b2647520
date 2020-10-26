@@ -1,0 +1,48 @@
+package br.com.concessionaria.modelo;
+
+public class Formula1 {
+	private String cor;
+	private String escuderia;
+	private boolean status;
+	private float velocidadeAtual;
+	private float valor;
+	private String ligar;
+	private String desligar;
+	//Sintaxe para os metodos
+	//<modificador> <Tipo do Retorno> <nomeMetodo> (<TipoParam> <nomeParam>{ 
+	public void preencherEscuderia(String pEscuderia) {
+		escuderia=pEscuderia.toUpperCase();
+	}
+	
+	public String retornarEscuderia() {
+		return escuderia;
+	}
+	
+	public void preencherCor(String pCor) {
+		cor=pCor.toUpperCase();
+	}
+	
+	public String retornoCor() {
+		return cor;
+	}
+	
+	public void preencherValor(float pValor) {
+		valor = pValor;
+	}
+	public float retornaValor() {
+		return valor;
+	}
+	
+	public String ligar() {
+		status=true;
+		return "Carro ligado";
+	}
+	
+	public String desligar() {
+		status=false;
+		return "Carro desligado";
+	}
+	
+	//preenchercor() - preencherValor() - retornarCor() - retornarValor()
+
+}//fechar classe

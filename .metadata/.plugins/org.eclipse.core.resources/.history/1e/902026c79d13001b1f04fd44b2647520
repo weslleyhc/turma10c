@@ -1,0 +1,39 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio2 {
+
+	public static void main(String[] args) {
+		/*
+		 * 2º) Monte um programa que solicite a idade e o nome das pessoas. 
+		 * Ao terminar, (quando o usuário responder "SIM", que ele quer terminar) o programa deverá exibir:
+		 *** a pessoa mais velha (nome e idade), 
+		 **** a pessoa mais nova (nome e idade), 
+		 * a quantidade de pessoas maiores de idade e 
+		 ** a média entre as idades que foram digitadas.
+		 */
+		
+		String nome = "";
+		short idade = 0;
+		int qtsmaior18 = 0;
+		double media = 0;
+		int contador=0;
+
+		do {
+			chute = Integer.parseInt(JOptionPane.showInputDialog("Tente acertar o número digitado"));
+			contador=contador+1;
+			//contador++;
+			//contador+=1;
+			if (numero>chute) {
+				JOptionPane.showMessageDialog(null, "O número é maior");
+			}else if (numero<chute) {
+				JOptionPane.showMessageDialog(null, "O número é menor");
+			}
+		}while(numero!=chute);
+		System.out.println("Parabéns você acertou com " + contador + " tentativa(s).");
+		
+
+	}
+
+}

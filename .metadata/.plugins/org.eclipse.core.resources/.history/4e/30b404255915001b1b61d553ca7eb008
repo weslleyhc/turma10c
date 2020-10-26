@@ -1,0 +1,35 @@
+package br.com.unixyz.modelo;
+
+public class Tecnologo {
+	
+	private boolean planoEstendido;
+
+	public boolean getAll() {
+		return planoEstendido;
+	}
+	
+	public void setAll(boolean planoEstendido) {
+	
+		this.planoEstendido = planoEstendido;
+	}
+
+	public Tecnologo() {
+		super();
+	}
+
+	public Tecnologo(boolean planoEstendido) {
+		super();
+		this.planoEstendido = planoEstendido;
+	}
+
+	public boolean isPlanoEstendido() {
+		return planoEstendido;
+	}
+
+	public void setPlanoEstendido(boolean planoEstendido) {
+		this.planoEstendido = planoEstendido;
+	}
+	
+	
+
+}

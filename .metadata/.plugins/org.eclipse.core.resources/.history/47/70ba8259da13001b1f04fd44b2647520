@@ -1,0 +1,21 @@
+package br.com.casageral.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.casageral.modelo.Loja;
+
+public class TesteLoja {
+
+	public static void main(String[] args) {
+		Loja object = null;
+		Loja produto = new Loja();
+		
+		produto.preencherMarca(JOptionPane.showInputDialog("Informe a marca"));
+		produto.preencherValor(500);
+		System.out.println(produto.retornaMarca());
+		System.out.println(produto.retornaValor());
+		
+
+	}
+
+}

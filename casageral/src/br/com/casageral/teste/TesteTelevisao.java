@@ -1,0 +1,20 @@
+package br.com.casageral.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.casageral.modelo.Televisao;
+
+public class TesteTelevisao {
+
+	public static void main(String[] args) {
+		Televisao tv = new Televisao();
+		tv.ligar();
+		System.out.println(tv.retornarTudo());
+		tv.mudarCanal(32);
+		tv.aumentarVolume(10);
+		System.out.println(tv.retornarTudo());
+
+
+	}
+
+}

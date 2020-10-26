@@ -1,0 +1,11 @@
+package br.com.ecommerce.beans;
+
+public class PessoaJuridica extends Cliente {
+
+	private String cnpj;
+	private String ie;
+	private String contato;
+
+
+
+}

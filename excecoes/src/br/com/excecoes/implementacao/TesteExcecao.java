@@ -1,0 +1,36 @@
+package br.com.excecoes.implementacao;
+
+import javax.management.RuntimeErrorException;
+
+public class TesteExcecao {
+
+	public static void main(String[] args) {
+		// Exceções: não são controladas pelo programador.
+		// Ecistem dois tipos:
+		// A-) Checked: o Java verifica antes da compilação
+		// B-) Unchecked: só ocorre após a compilação
+		try {
+			int numero = Integer.parseInt("70");
+			System.out.println("Resultado " + numero * 10);
+
+			String email =null;
+			if (email==null) {
+				throw new RuntimeException("Dado corrompido");
+			}
+			System.out.println("Usuário: " + email.substring(0, email.indexOf("@")));
+
+		}catch (NullPointerException e) {
+			System.out.println("Objeto nulo");
+		}catch(StringIndexOutOfBoundsException e) {
+			System.out.println("Coordenada inválido");
+		}catch(NumberFormatException e) {
+			System.out.println("Número inválido");
+		}catch(Exception e) {
+			System.out.println("Deu ruim");
+			e.printStackTrace();
+		}finally {
+			System.out.println("Até logo");
+		}
+	}
+
+}

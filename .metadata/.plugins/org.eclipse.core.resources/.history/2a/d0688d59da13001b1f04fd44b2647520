@@ -1,0 +1,27 @@
+package br.com.casageral.modelo;
+
+public class Loja {
+	private String marca;
+	private float valor;
+	private boolean status;
+	private int canal;
+	private int volume;
+
+	public void preencherMarca(String pMarca) {
+		marca = pMarca.toUpperCase();
+	}
+	public String retornaMarca() {
+		return marca;
+	}
+
+	public void preencherValor (float pValor) {
+		valor = pValor;
+	}
+
+	public float retornaValor() {
+		return valor;
+	}
+
+
+
+}

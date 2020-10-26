@@ -1,0 +1,13 @@
+package br.com.concessionaria.teste;
+
+import br.com.concessionaria.modelo.formula1;
+
+public class TesteFormula1 {
+
+	public static void main(String[] args) {
+		// Criar um objeto
+		formula1 objeto = null;
+		
+	}
+
+}
